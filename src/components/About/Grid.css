@@ -1,0 +1,16 @@
+#grid {
+    border: 2px solid white;
+    padding: 0 10px;
+    width: 25%;
+    min-height: 50vh;
+    min-width: 300px;
+}
+
+#grid h1{
+    font-size: 32px;
+}
+
+#grid p {
+    font-size: 24px;
+    padding: 0 5%;
+}

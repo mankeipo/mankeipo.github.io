@@ -1,0 +1,81 @@
+
+.wrapper {
+    min-height: 70vh;
+    width: 100%;
+    margin-top: 0px;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/Community.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10%;
+    justify-content: center;
+}
+
+.textBox{
+    color: var(--text-color);
+    text-align:left;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.textBox h1 {
+    /* padding: 0 20px; */
+}
+
+@media (max-width: 768px) {
+    .textBox h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .textBox h1 {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .textBox h1 {
+        font-size: 62px;
+    }
+}
+
+.textBox p {
+    font-size: 14px;
+}
+
+.start-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-sci {
+    width: 170px;
+    display: flex;
+    gap: 1rem;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+}

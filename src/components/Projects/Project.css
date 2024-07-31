@@ -1,0 +1,27 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 5%;
+}
+
+.projects {
+    background-color: var(--second-bg-color);
+    padding-bottom: 10vh;
+}
+
+#title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.projects h1{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+

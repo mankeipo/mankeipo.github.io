@@ -1,0 +1,45 @@
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* Adjust padding as needed for spacing */
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+}
+
+header ul li {
+    font-size: 13px;
+    list-style: none;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 1px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a:active {
+    background: white;
+    color: #2b1055;
+}

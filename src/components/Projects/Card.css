@@ -5,9 +5,8 @@
     border-radius: 2rem;
     text-align: left;
     max-width: 30%;
-    min-height: 40vh;
+    min-height: 58vh;
     min-width: 300px;
-
 }
 
 #card h1 {
@@ -30,4 +29,8 @@
 
 #card:hover {
     transform: scale(1.05);
+}
+
+#card img {
+    width: 100%;
 }

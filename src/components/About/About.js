@@ -7,9 +7,9 @@ class About extends React.Component {
           <div class="about">
             <h1>My Expertise</h1>
             <div class="grids">
-              <Grid title="Software Engineer" desc="Proficient in C++, Java, JavaScript."/>
+              <Grid title="Software Engineer" desc="Proficient in C++, Java, JavaScript, Python."/>
               <Grid title="Frontend Development" desc="Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React."/>
-              <Grid title="Backend Development" desc="Experienced in developing RESTful API using C# and ExpressJS"/>
+              <Grid title="Backend Development" desc="Experienced in developing RESTful API using C# and NodeJS"/>
             </div>
             
           </div>

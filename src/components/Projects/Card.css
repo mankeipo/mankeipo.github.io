@@ -4,7 +4,7 @@
     border: solid 2px var(--main-color);
     border-radius: 2rem;
     text-align: left;
-    max-width: 30%;
+    max-width: 400px;
     min-height: 58vh;
     min-width: 300px;
 }

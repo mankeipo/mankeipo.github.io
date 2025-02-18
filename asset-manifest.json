@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.88ee45fc.css",
-    "main.js": "/static/js/main.4bd5b2b5.js",
+    "main.css": "/static/css/main.13d736be.css",
+    "main.js": "/static/js/main.a0f985a8.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/stray-finder.png": "/static/media/stray-finder.68086c091464d8b0fa27.png",
     "static/media/Community.jpg": "/static/media/Community.4e1ba81396d6fa500401.jpg",
+    "static/media/Alumlink.png": "/static/media/Alumlink.281a92be3f82f1c437f6.png",
     "static/media/banner.jpg": "/static/media/banner.a9d109ec3f7ab80644b4.jpg",
+    "static/media/jeopardy.png": "/static/media/jeopardy.d182ca6811b64d45df7a.png",
     "index.html": "/index.html",
-    "main.88ee45fc.css.map": "/static/css/main.88ee45fc.css.map",
-    "main.4bd5b2b5.js.map": "/static/js/main.4bd5b2b5.js.map",
+    "main.13d736be.css.map": "/static/css/main.13d736be.css.map",
+    "main.a0f985a8.js.map": "/static/js/main.a0f985a8.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88ee45fc.css",
-    "static/js/main.4bd5b2b5.js"
+    "static/css/main.13d736be.css",
+    "static/js/main.a0f985a8.js"
   ]
 }

@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.newsreader {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    letter-spacing: 0em;
+}
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1DEDE;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    padding: 30px 50px;
+    letter-spacing: -0.05em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+nav ul li {
+    font-size: 1em;
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+nav ul:hover li a {
+    opacity: 0.5; /* Fade all links */
+}
+
+nav ul li:hover a {
+    opacity: 1; /* Fully visible */
+}
+
+.homepage{
+    background-color: #E1DEDE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    flex-wrap: wrap;
+}
+
+.homepage h1, .aboutme h1, .skills h1, .projects h1{
+    font-size: 4em;
+}
+
+.homepage p {
+    max-width: 500px;
+}
+
+.homepage img, .aboutme img {
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 3 / 4;
+    margin: 50px 0px;
+    object-fit: cover;
+}
+
+.aboutme span {
+    max-width: 800px;
+}
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    flex-wrap: wrap;
+}
+
+.skills {
+    margin-top: 100px;
+    text-align: center;
+    height: 600px;
+}
+
+.box {
+    max-width: 300px;
+    /* height: 500px; */
+    text-align: center;
+}
+
+.containers {
+    margin: 0px 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container p {
+    max-width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+}
+
+a.button  {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.skill-icon {
+    font-size: 80px;
+    margin: 10px;
+}
+
+.fa-html5 { color: #e34f26; }
+.fa-css3-alt { color: #1572b6; }
+.fa-react { color: #61dafb; }
+.fa-node { color: #68a063; }
+.fa-database { color: #4db33d; }
+.fa-server { color: #808080; }
+.fa-js { color: #f7df1e; }
+.fa-python { color: #3776ab; }
+/* .fa-code { color: #888; }
+.fa-github { color: #000; }
+.fa-linkedin { color: #0077B5; } */
+
+.projects {
+    margin: 0 15%;
+}
+
+.project-containers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+    
+}
+
+.project-containers img {
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 20px;
+    /* border: 2px solid #E1DEDE;
+    border-radius: 20px; */
+    height: 430px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover img {
+    transform: scale(1.05);
+}
+
+.project-containers a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-containers h3 {
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: #E1DEDE;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+}
+
+footer ul {
+    display: flex;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.footer-icons {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: black;
+    animation: transform 0.5 ease-in-out;
+}
+
+.footer-icons:hover {
+    transform: scale(1.2);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .homepage h1 {
+        font-size: 30px;
+    }
+    .skill-icon {
+        font-size: 50px;
+    }
+    .box h2 {
+        font-size: 18px;
+    }
+    .container {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .projects {
+        margin: 0 5%;
+    }
+    
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #E1DEDE;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show Nav Links when Active */
+    }
+}

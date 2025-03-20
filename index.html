@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/#" class="logo instrument-serif-regular" >Man Kei Po</a>
+        <!-- Need Resizing-->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="newsreader nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="homepage">
+            <span data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="instrument-serif-regular">Hi! My name is Man Kei Po</h1>
+                <p class="newsreader">Fullstack developer</p>
+                <a href="/pages/contact.html" class="button instrument-serif-regular">Say Hello</a>
+            </span>
+            <img src="img/Light+Objects+1.png" alt="image" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div id="about"></div>
+        <div class="aboutme" data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/Sleek+Objects+2.png" alt="image">
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                <h1 class="instrument-serif-regular">About Me</h1>
+                <p class="newsreader">I'm a Computer Science student at Hunter College, passionate about backend development, full-stack web applications, and problem-solving. I enjoy building scalable and efficient software solutions, and I’m always looking to expand my knowledge in algorithms and system design.</p>
+                <p class="newsreader">With experience in web development, API design, and real-time applications, I have worked on projects like AlumLink, Foodie, and a multiplayer Jeopardy game. Through internships, hackathons, and coding boot camps, I’ve honed my skills in JavaScript, Python, React, Node.js, and databases like MongoDB and PostgreSQL.</p>
+                <p class="newsreader">Feel free to explore my projects, check out my resume, or get in touch!</p>
+            </span>
+        </div>
+        <!-- Need Resizing-->
+        <div id="expertise"></div>
+        <div class="skills" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="instrument-serif-regular">My Skills</h1>
+            <h3 class="newsreader">Fullstack Development</h3>
+            <div class="containers">
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h2 class="newsreader">Frontend</h2>
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <i class="fab fa-react skill-icon"></i>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h2 class="newsreader">Backend</h2>
+                    <i class="fab fa-node skill-icon"></i>
+                    <i class="fas fa-database skill-icon"></i>
+                    <i class="fas fa-server skill-icon"></i>
+                </div>
+                <div class="box lastbox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <h2 class="newsreader">Languages</h2>
+                    <i class="fab fa-js skill-icon"></i>
+                    <i class="fab fa-python skill-icon"></i>
+                    <i class="fa-brands fa-java skill-icon"></i>
+
+                </div>
+            </div>
+        </div>
+        <!-- Need Resizing-->
+        <div id="projects"></div>
+        <div class="projects" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 class="instrument-serif-regular">Projects</h1>
+            <div class="project-containers">
+                <div class="container">
+                    <a href="/pages/Jeopardy.html">
+                        <img src="img/jeopardy.png" alt="image">
+                        <h3 class="newsreader">Jeopardy</h3>
+                        <p class="newsreader">A full-stack web application for a real-time multiplayer Jeopardy game using React, JavaScript, and Express.js, implementing socket connections for live gameplay, a RESTful API for data management</p>
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="/pages/stray.html">
+                        <img src="img/stray-finder.png" alt="image">
+                        <h3 class="newsreader">Stray-finder</h3>
+                        <p class="newsreader">A full-stack web application for locating and tracking stray animals using React, JavaScript, and Express.js, integrating Google Maps API for stray coordinates, a RESTful API, AWS S3 for image storage, and Nodemailer for subscriber notifications</p>
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="/pages/Alum.html">
+                        <img src="img/Alumlink.png" alt="image">
+                        <h3 class="newsreader">AlumLink</h3>
+                        <p class="newsreader">A full-stack open source alumni directory solution designed for CUNY Law School graduates in a team of 4 and built with React, Node.js, Express.js, and PostgreSQL.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="newsreader">Get connected with me on social networks!</p>
+        <ul>
+            <li><a href="https://github.com/mankeipo/"><i class="fa-brands fa-github footer-icons"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/man-kei-po-22537421a/"><i class="fa-brands fa-linkedin footer-icons"></i></a></li>
+            <li><a href="mailto:pomankei66666@gmail.com"><i class="fa-solid fa-envelope footer-icons"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+      }
+    </script>
+</body>
+</html>

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #E1DEDE;
     margin: 0;
@@ -20,6 +24,7 @@ body {
 }
 
 nav {
+    padding-top: env(safe-area-inset-top);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -138,4 +143,42 @@ footer ul {
 
 .footer-icons:hover {
     transform: scale(1.2);
+}
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollUpBtn:hover {
+    background-color: #555;
+}
+
+#scrollUpBtn i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 720px) {
+    .text {
+        margin-top: 50px;
+    }
+
+    .context h1 {
+        font-size: 40px;
+    }
 }

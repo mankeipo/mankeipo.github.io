@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Man Kei Po | Jeopardy</title>
     <link rel="stylesheet" href="project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <button id="scrollUpBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <nav>
         <a href="/#" class="logo instrument-serif-regular" >Man Kei Po</a>
         <ul>
@@ -33,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="slideshow" data-aos="fade-up" data-aos-duration="1000">
+        <div id="slideshow"class="slideshow" data-aos="fade-up" data-aos-duration="1000">
             <img src="../img/jeopardy1.png" alt="">
             <img src="../img/jeopardy2.png" alt="">
             <img src="../img/jeopardy3.png" alt="">
@@ -41,17 +44,23 @@
             <img src="../img/jeopardy5.png" alt="">
         </div>
     </main>
-    <footer>
-        <p class="newsreader">Get connected with me on social networks!</p>
-        <ul>
-            <li><a href="https://github.com/mankeipo/"><i class="fa-brands fa-github footer-icons"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/man-kei-po-22537421a/"><i class="fa-brands fa-linkedin footer-icons"></i></a></li>
-            <li><a href="mailto:pomankei66666@gmail.com"><i class="fa-solid fa-envelope footer-icons"></i></a></li>
-        </ul>
-    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      window.addEventListener("scroll", function () {
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+        const slideshowSection = document.getElementById("slideshow");
+
+        if (window.scrollY >= slideshowSection.offsetTop - 50) {
+            scrollUpBtn.style.display = "flex";
+        } else {
+            scrollUpBtn.style.display = "none";
+        }
+      });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0});
+    }
     </script>
 </body>
 </html>

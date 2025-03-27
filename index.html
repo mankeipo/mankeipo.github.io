@@ -9,9 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
+    <title>Man Kei Po | Fullstack developer</title>
 </head>
 <body>
+    <button id="scrollUpBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <nav>
         <a href="/#" class="logo instrument-serif-regular" >Man Kei Po</a>
         <!-- Need Resizing-->
@@ -27,7 +30,7 @@
             <span data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="instrument-serif-regular">Hi! My name is Man Kei Po</h1>
                 <p class="newsreader">Fullstack developer</p>
-                <a href="/pages/contact.html" class="button instrument-serif-regular">Say Hello</a>
+                <a href="#about" class="button instrument-serif-regular">Get Started</a>
             </span>
             <img src="img/Light+Objects+1.png" alt="image" data-aos="fade-up" data-aos-duration="1000">
         </div>
@@ -112,6 +115,20 @@
             const navLinks = document.getElementById("nav-links");
             navLinks.classList.toggle("active");
       }
+      window.addEventListener("scroll", function () {
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+        const aboutSection = document.getElementById("about");
+
+        if (window.scrollY >= aboutSection.offsetTop - 50) {
+            scrollUpBtn.style.display = "flex";
+        } else {
+            scrollUpBtn.style.display = "none";
+        }
+      });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0});
+    }
     </script>
 </body>
 </html>

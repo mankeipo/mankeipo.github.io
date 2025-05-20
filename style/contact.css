@@ -1,0 +1,194 @@
+body {
+    background-color: #E1DEDE;
+    margin: 0;
+}
+.newsreader {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    letter-spacing: 0em;
+}
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    padding: 30px 50px;
+    letter-spacing: -0.05em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+nav ul li {
+    font-size: 1.5em;
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 100px 100px;
+    flex-wrap: wrap;
+}
+
+.contact {
+    margin-right: 100px;
+    width: 500px;
+    margin-right: 300px;
+}
+
+p::after {
+    content: "(required)";
+    color: grey;
+}
+
+.first-name, .last-name, .email, .message{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 10px 0px;
+}
+
+.first-name input, .last-name input{
+    width: 320px;
+    height: 50px;
+    border-radius: 100px;
+    border-color: black;
+    padding-left: 25px;
+}
+
+.email input {
+    width: 720px;
+    padding-left: 25px;
+    height: 50px;
+    border-radius: 100px;
+    border-color: black;
+}
+
+.form-name {
+    display: flex;
+}
+
+.message textarea {
+    padding: 25px;
+    border-radius: 20px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button  {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer-icons {
+    animation: transform 0.5 ease-in-out;
+}
+
+.footer-icons:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 20px;
+    }
+
+    .contact {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-name {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-name input,
+    .last-name input,
+    .email input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .email, .message {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .message textarea {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    nav ul {
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+}

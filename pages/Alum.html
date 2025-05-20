@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Man Kei Po | AlumLink</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="../style/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
@@ -12,11 +12,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <button id="scrollUpBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
     <nav>
-        <a href="/#" class="logo instrument-serif-regular">Man Kei Po</a>
+        <a href="../index.html" class="logo instrument-serif-regular">Man Kei Po</a>
         <ul>
             <li><a href="https://github.com/mankeipo/"><i class="fa-brands fa-github footer-icons"></i></a></li>
             <li><a href="https://www.linkedin.com/in/man-kei-po-22537421a/"><i class="fa-brands fa-linkedin footer-icons"></i></a></li>
@@ -35,30 +32,57 @@
                     <b><a href="https://github.com/CUNYTechPrep/AlumLink">Open Project <i class="fa-solid fa-arrow-right"></i></a></b>
                 </div>
             </div>
+            <div class="next-button">
+                <br>
+                <button class="next" onclick="changePage(-1)">&#10094; Last Project </button>
+                <button class="next" onclick="changePage(1)">Next Project &#10095; </button>
+            </div>
         </div>
-        <div id="slideshow" class="slideshow" data-aos="fade-up" data-aos-duration="1000">
-            <img src="../img/Alum2.png" alt="">
-            <img src="../img/Alum3.png" alt="">
-            <img src="../img/Alum4.png" alt="">
+        <div class="slideshow" data-aos="fade-up" data-aos-duration="1000">
+            <div class="buttons">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>          
+                <button class="next" onclick="changeImage(1)">&#10095;</button> 
+            </div>
+            <img src="" alt="">
         </div>
     </main>
+    <footer>
+        <p class="newsreader">Get connected with me on social networks!</p>
+        <ul>
+            <li><a href="https://github.com/mankeipo/"><i class="fa-brands fa-github footer-icons"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/man-kei-po-22537421a/"><i class="fa-brands fa-linkedin footer-icons"></i></a></li>
+            <li><a href="mailto:pomankei66666@gmail.com"><i class="fa-solid fa-envelope footer-icons"></i></a></li>
+        </ul>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-      window.addEventListener("scroll", function () {
-        const scrollUpBtn = document.getElementById("scrollUpBtn");
-        const slideshowSection = document.getElementById("slideshow");
+      const galleryImages = [
+        {src: "../img/Alum2.png"},
+        {src: "../img/Alum3.png"}, 
+        {src: "../img/Alum4.png"}
+      ];
+      function changeImage(direction) {
+        currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+        document.querySelector('.slideshow img').src = galleryImages[currentIndex].src;
+      }
+      let currentIndex = 0;
+      document.querySelector('.slideshow img').src = galleryImages[currentIndex].src;
 
-        if (window.scrollY >= slideshowSection.offsetTop - 50) {
-            scrollUpBtn.style.display = "flex";
-        } else {
-            scrollUpBtn.style.display = "none";
+      function changePage(direction) {
+        const pages = ["Alum.html", "Jeopardy.html", "stray.html"];
+        const currentPath = window.location.pathname.split("/").pop(); // get current page name
+        let currentIndex = pages.indexOf(currentPath);
+
+        // If current page isn't in the list, default to the first one
+        if (currentIndex === -1) {
+            currentIndex = 0;
         }
-      });
 
-    function scrollToTop() {
-        window.scrollTo({ top: 0});
-    }
+        const nextIndex = (currentIndex + direction + pages.length) % pages.length;
+        window.location.href = pages[nextIndex];
+      }
+
     </script>
 </body>
 </html>

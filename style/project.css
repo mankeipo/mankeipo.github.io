@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #E1DEDE;
     margin: 0;
@@ -24,7 +20,6 @@ body {
 }
 
 nav {
-    padding-top: env(safe-area-inset-top);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -101,12 +96,12 @@ nav ul li a {
 }
 
 .slideshow img{
-    width: 80%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 10px;
-    height: auto;
+    max-height: 60vh; 
 }
 
 .slideshow {
@@ -145,40 +140,54 @@ footer ul {
     transform: scale(1.2);
 }
 
-#scrollUpBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.slideshow {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    background-color: white;
+    color: green;
+    border: none;
     width: 50px;
     height: 50px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 50%;
+    font-size: 36px;
+    padding: 0;
     cursor: pointer;
-    display: none;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 50%;
+    z-index: 1;
+    
 }
 
-#scrollUpBtn:hover {
-    background-color: #555;
+
+.slideshow .prev {
+    left: 10px;
 }
 
-#scrollUpBtn i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slideshow .next {
+    right: 10px;
 }
 
-@media (max-width: 720px) {
-    .text {
-        margin-top: 50px;
+.next-button button {
+    border: none;
+    margin-right: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .slideshow button {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;    
     }
 
-    .context h1 {
-        font-size: 40px;
-    }
+    /* .slideshow img {
+        height: 25vh;
+    } */
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Man Kei Po | Contact</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo instrument-serif-regular" >Man Kei Po</a>
+        <ul class="">
+            <li><a href="https://github.com/mankeipo/"><i class="fa-brands fa-github footer-icons"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/man-kei-po-22537421a/"><i class="fa-brands fa-linkedin footer-icons"></i></a></li>
+            <li><a href="mailto:pomankei66666@gmail.com"><i class="fa-solid fa-envelope footer-icons"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contact" data-aos="fade-up" data-aos-duration="1000" >
+            <h1 class="instrument-serif-regular">Contact Me</h1>
+            <h3 class="newsreader">Interested in working together? Fill out some info and we will be in touch shortly. I can’t wait to hear from you!</h3>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="newsreader">
+            <input type="hidden" name="access_key" value="25a5a7f2-3f8c-4f27-b0c0-a34237c47540">
+            <p>Name</p>
+            <div class="form-name">
+                <div class="first-name">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="last-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name"required>
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"required>
+            </div>
+
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <!-- <a href="#"class="button newsreader">Submit</a> -->
+            <button type="submit" class="button newsreader">Submit</button>
+        </form>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
